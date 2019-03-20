@@ -1,26 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { AppWrapper, AppLogo, AppHeader } from "./styles/app";
+import { Button } from "./styles/buttons";
+
+// components
+import Doggo from "./components/Doggo";
 
 class App extends Component {
+  state = { party: false };
+
+  setParty = bool => {
+    this.setState({ party: bool });
+  };
+
   render() {
+    const { party } = this.state;
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <AppWrapper>
+        <AppHeader party={party} className="App-header">
+          <Doggo />
+          <AppLogo src={logo} alt="logo" party={party} />
+        </AppHeader>
+        <Button onClick={() => this.setParty(true)} primary right>
+          🤘
+        </Button>
+        <Button onClick={() => this.setParty(false)} secondary left>
+          ✌️
+        </Button>
+      </AppWrapper>
     );
   }
 }

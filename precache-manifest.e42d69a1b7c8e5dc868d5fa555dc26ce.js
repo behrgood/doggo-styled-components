@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/doggo-styled-components/static/js/runtime~main.d9dde9c0.js"
   },
   {
-    "revision": "f5fd0baf687e8da0908a",
-    "url": "/doggo-styled-components/static/js/main.8a192f1a.chunk.js"
+    "revision": "ffa49171783068b7e9c9",
+    "url": "/doggo-styled-components/static/js/main.92772844.chunk.js"
   },
   {
     "revision": "77338693fff191308231",
     "url": "/doggo-styled-components/static/js/2.149fe287.chunk.js"
   },
   {
-    "revision": "f5fd0baf687e8da0908a",
+    "revision": "ffa49171783068b7e9c9",
     "url": "/doggo-styled-components/static/css/main.d425387e.chunk.css"
   },
   {
-    "revision": "3c406375159d9fa8d4efdb2049ab6efb",
+    "revision": "5ec7ef887cf84b74416775495f4ef1ce",
     "url": "/doggo-styled-components/index.html"
   }
 ];
